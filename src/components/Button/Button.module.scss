@@ -1,0 +1,22 @@
+@use "../../scss";
+
+.btn {
+  cursor: pointer;
+  border: none;
+  padding: 0.4rem 0.7rem;
+  min-width: 3rem;
+  border-radius: 12px;
+  background-color: scss.$secondary;
+  color: scss.$font-primary;
+  box-shadow: scss.$shadow;
+  transition: background-color 200ms;
+
+  &:hover {
+    background-color: scss.$tertiary;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
